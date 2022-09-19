@@ -35,11 +35,11 @@ resource "aws_route_table" "test-route-table-pub-sub3" {
   }
 
   tags = {
-    Name = "test-route-table-pub-sub3"
+    Name = "skt-user13-test-route-table-pub-sub3"
   }
 
   tags_all = {
-    Name = "test-route-table-pub-sub3"
+    Name = "skt-user13-test-route-table-pub-sub3"
   }
 
   vpc_id = aws_vpc.test-vpc.id
