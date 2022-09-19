@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "test-s3-tf-state" {
 
-  bucket = "test-s3-bucket-tfstate"
+  bucket = "skt-test-s3-bucket-tfstate"
 
   tags = {
-    "Name" = "test-s3-bucket-tfstate"
+    "Name" = "skt-test-s3-bucket-tfstate"
   }
   
 }
@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "test-s3-tf-state" {
 resource "aws_dynamodb_table" "test-ddb-tf-lock" {
 
   depends_on   = [aws_s3_bucket.test-s3-tf-state]
-  name         = "test-s3-ddb-tflock"
+  name         = "skt-test-s3-ddb-tflock"
   billing_mode = "PAY_PER_REQUEST"
   hash_key     = "LockID"
 
@@ -21,7 +21,7 @@ resource "aws_dynamodb_table" "test-ddb-tf-lock" {
   }
 
   tags = {
-    "Name" = "test-s3-ddb-tflock"
+    "Name" = "skt-test-s3-ddb-tflock"
   }
 
 }
