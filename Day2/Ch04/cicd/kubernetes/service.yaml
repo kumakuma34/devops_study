@@ -12,4 +12,4 @@ spec:
     app: bubble-pool
   externalTrafficPolicy: Cluster
   sessionAffinity: None
-  type: clusterIP
+  type: ClusterIP
