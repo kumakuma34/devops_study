@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: bubble-pool
-        image: <AWS ECR Repository URL>/test:green
+        image: 255380800200.dkr.ecr.ap-southeast-1.amazonaws.com/skt-user00:green
         ports:
         - name: http
           containerPort: 8080
